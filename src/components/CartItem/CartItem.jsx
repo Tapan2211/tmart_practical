@@ -125,8 +125,6 @@ function CartItem({ send }) {
 
 export default CartItem;
 
-
-// import React, { useState } from "react";
 // import styles from './CartItem.module.css';
 // import { toast } from 'react-toastify';
 
