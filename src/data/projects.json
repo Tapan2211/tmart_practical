@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "NoiseFit Voyage",
+        "description": "AMOLED Display | 4G Calling",
+        "price": 12999,
+        "img": "https://profiles-fyi-shivam907.vercel.app/watch1.webp"
+    },
+    {
+        "id": 2,
+        "name": "Buds VS404 With ENC",
+        "description": "50H Playtime | Quad Mic",
+        "price": 999,
+        "img": "https://profiles-fyi-shivam907.vercel.app/earphone1.webp"
+    },
+    {
+        "id": 3,
+        "name": "ColorFit Qube Plus",
+        "description": "AMOLED Display | 4G Calling",
+        "price": 4999,
+        "img": "https://profiles-fyi-shivam907.vercel.app/watch2.webp"
+    },
+    {
+        "id": 4,
+        "name": "Aura Buds",
+        "description": "60H Playtime | Dual Pairing",
+        "price": 1599,
+        "img": "https://profiles-fyi-shivam907.vercel.app/earphone2.webp"
+    },
+    {
+        "id": 5,
+        "name": "NoiseFit Diva",
+        "description": "AMOLED Display | Diamond Dial",
+        "price": 4999,
+        "img": "https://profiles-fyi-shivam907.vercel.app/watch3.webp"
+    },
+    {
+        "id": 6,
+        "name": "Buds X Prime",
+        "description": "120H Playtime | Quad Mic",
+        "price": 1799,
+        "img": "https://profiles-fyi-shivam907.vercel.app/earphone3.webp"
+    },
+    {
+        "id": 7,
+        "name": "ColorFit Pulse 2 Pro",
+        "description": "500 Nits | 1.8\" display",
+        "price": 3499,
+        "img": "https://profiles-fyi-shivam907.vercel.app/watch4.webp"
+    },
+    {
+        "id": 8,
+        "name": "Evolve 2 Play",
+        "description": "Circular Display | Noise OS",
+        "price": 2499,
+        "img": "https://profiles-fyi-shivam907.vercel.app/watch5.webp"
+    }
+]

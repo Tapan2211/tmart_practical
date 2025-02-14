@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    /* gap: 0.1rem; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem 0;
+    background-image: url("https://profiles-fyi-shivam907.vercel.app/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+
+.main h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.main p {
+    font-size: 1rem;
+    color: #545454;
+}
+
+@media screen and (max-width: 750px) {
+    .main h1 {
+        font-size: 3.2rem;
+    }
+
+    .main p {
+        font-size: 1.6rem;
+    }
+}
