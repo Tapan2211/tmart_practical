@@ -8,6 +8,11 @@ const CustomNavbar = () => {
     const navigate = useNavigate();
     const count = useSelector((state) => state.cart.totalItems);
     const isLoggedIn = localStorage.getItem("loggedIn");
+    const data = localStorage.getItem('user');
+    const userData = JSON.parse(data);
+    const firstLetter = userData.username ? userData.username.charAt(0).toUpperCase() : "";
+
+    console.log("USERNAME", userData.username)
 
     const handleCartClick = () => {
         navigate('/cart');
@@ -59,9 +64,18 @@ const CustomNavbar = () => {
 
                         {/* Logout Button (Only if Logged In) */}
                         {isLoggedIn && (
-                            <Button variant="danger" onClick={handleLogout}>
-                                Logout
-                            </Button>
+                            <div className="d-flex gap-2">
+                                <Button variant="danger" onClick={handleLogout}>
+                                    Logout
+                                </Button>
+
+                                <div
+                                    className="d-flex align-items-center justify-content-center rounded-circle bg-danger text-white"
+                                    style={{ width: "40px", height: "40px", fontSize: "18px", fontWeight: "bold" }}
+                                >
+                                    {firstLetter}
+                                </div>
+                            </div>
                         )}
                     </Nav>
                 </Navbar.Collapse>

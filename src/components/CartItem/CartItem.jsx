@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeItem, increaseQuantity, decreaseQuantity, clearCart } from "../redux/CardSlice";
 import Navbar from "../navbar/Navbar";
 import Header from "../header/Header";
+import Footer from '../footer/Footer'
 import { DISSCOUNT, NO_DISSCOUNT } from "../utill/config";
 
 function CartItem({ send }) {
@@ -119,6 +120,7 @@ function CartItem({ send }) {
                     </div>
                 )
             }
+            <Footer />
         </div >
     );
 }

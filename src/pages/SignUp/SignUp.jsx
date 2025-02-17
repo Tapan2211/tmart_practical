@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import Input from "../../components/input/Input";
 
 const SignUp = () => {
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
     const handleSignUp = (e) => {
         e.preventDefault();
-        localStorage.setItem("user", JSON.stringify({ email, password }));
+        localStorage.setItem("user", JSON.stringify({ username, email, password }));
         alert("Signup Successful! Redirecting to Login.");
         navigate("/");
     };
@@ -19,6 +20,15 @@ const SignUp = () => {
             <div className="card p-4 shadow" style={{ width: "25rem" }}>
                 <h3 className="text-center text-danger mb-4">Sign Up</h3>
                 <form onSubmit={handleSignUp}>
+
+                    <Input
+                        label="Username"
+                        type="username"
+                        placeholder="Enter your name"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+
                     <Input
                         label="Email"
                         type="email"

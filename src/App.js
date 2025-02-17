@@ -13,11 +13,6 @@ import OrderPlaced from './pages/OrderPlace/OrderPlaced';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Navbar />
-    //   <Header />
-    //   <ProductList />
-    // </div>
     <Router>
       <Routes>
         <Route path='/' element={<Login />} />
