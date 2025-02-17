@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import Logo from "../logo/Logo";
+import { useAuth } from "../../context/AuthContext";
 
 const CustomNavbar = () => {
     const navigate = useNavigate();
@@ -11,6 +12,7 @@ const CustomNavbar = () => {
     const data = localStorage.getItem('user');
     const userData = JSON.parse(data);
     const firstLetter = userData.username ? userData.username.charAt(0).toUpperCase() : "";
+    const { isAuthenticated, logout } = useAuth();
 
     console.log("USERNAME", userData.username)
 
@@ -23,7 +25,8 @@ const CustomNavbar = () => {
     };
 
     const handleLogout = () => {
-        localStorage.removeItem("loggedIn");
+        // localStorage.removeItem("loggedIn");
+        logout();
         navigate("/");
     };
 
@@ -63,9 +66,10 @@ const CustomNavbar = () => {
                         </Button>
 
                         {/* Logout Button (Only if Logged In) */}
-                        {isLoggedIn && (
+                        {/* {isLoggedIn && ( */}
+                        {isAuthenticated && (
                             <div className="d-flex gap-2">
-                                <Button variant="danger" onClick={handleLogout}>
+                                <Button variant="danger" onClick={logout}>
                                     Logout
                                 </Button>
 
